@@ -1,0 +1,19 @@
+class: UserProfile
+table: user_profile
+fields:
+  userId: String
+  campusId: int
+  name: String
+  email: String
+  branch: String
+  year: int
+  gender: String
+  bio: String?
+  skills: List<String>
+  interests: List<String>
+  lookingFor: List<String>
+  createdAt: DateTime
+indexes:
+  user_profile_user_id_idx:
+    fields: userId
+    unique: true

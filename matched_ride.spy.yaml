@@ -1,0 +1,6 @@
+class: MatchedRide
+fields:
+  ride: Ride
+  score: int
+  whyMatched: List<String>
+  farePerHead: double?

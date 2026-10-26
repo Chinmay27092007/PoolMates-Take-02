@@ -1,0 +1,13 @@
+class: RideMember
+table: ride_member
+fields:
+  rideId: int
+  userId: String
+  userName: String
+  userGender: String
+  role: String
+  joinedAt: DateTime
+indexes:
+  ride_member_ride_user_unique_idx:
+    fields: rideId, userId
+    unique: true
